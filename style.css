@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Outfit', sans-serif !important;
+  background-color: #161616 !important;
+  min-height: 100vh;
+  color: #9a9a9a !important;
+  position: relative;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+}
+
+.bg-img {
+  position: absolute;
+  z-index: -1;
+  height: 100%;
+}
+
+nav a {
+  color: #9a9a9a !important;
+}
+
+.navbar-toggler {
+  background-color: #1A1A1A !important;
+  border: 1.5px solid rgb(36, 36, 36);
+}
+
+.mail {
+  width: 43px;
+  height: 43px;
+  font-size: 20px;
+  padding: 28px;
+  border: 1.5px solid rgb(36, 36, 36);
+  background-color: #1A1A1A;
+  cursor: pointer;
+}
+
+.mail:hover,
+.keep-in-touch:hover {
+  color: #fff !important;
+  text-shadow: 0 0 40px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 140px #fff;
+  border-radius: 5px;
+}
+
+nav .nav-link {
+  position: relative;
+}
+
+
+nav .nav-link::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border-bottom: 2px solid #9a9a9a;
+  width: 0%;
+  content: "";
+}
+
+
+nav .nav-link:hover::after {
+  transition: 0.2s ease-in-out;
+  width: 100%;
+}
+
+nav .nav-link:hover {
+  color: #fff !important;
+  background-color: transparent;
+  text-shadow: 0 0 40px #fff, 0 0 80px #fff, 0 0 100px #fff, 0 0 140px #fff;
+  border-radius: 5px;
+}
+
+.icon {
+  width: 140px;
+  height: 140px;
+  padding: 4px;
+  background-color: #111111;
+}
+
+.icon:hover {
+  box-shadow: 0 0 10px #9a9a9a, 0 0 40px #9a9a9a, 0 0 80px #9a9a9a;
+}
+
+#main h2 {
+  font-size: 56px;
+  max-width: 500px;
+}
+
+#main a,
+footer a,
+#contact a {
+  text-decoration: none;
+  list-style: none;
+  color: #9a9a9a;
+}
+
+.t-effect {
+  background: linear-gradient(97.13deg, #E9E9E9 0%, #515151 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.my-btn {
+  width: 200px;
+  border-radius: 4px;
+  background-color: #1A1A1A;
+  color: #9a9a9a;
+  border: 1.5px solid rgb(36, 36, 36);
+  font-size: 16px;
+}
+
+.my-btn:hover {
+  scale: 0.9;
+  transition: .2s ease-in-out;
+  box-shadow: 0 0 10px #9a9a9a, 0 0 40px #9a9a9a, 0 0 80px #9a9a9a;
+  text-shadow: 0 0 10px #fff, 0 0 40px #fff, 0 0 80px #fff;
+}
+
+.my-btn i {
+  font-size: 24px;
+}
+
+#about-me h2 {
+  font-size: 48px;
+  float: none;
+}
+
+.img-container {
+  position: relative;
+}
+
+.img-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(18, 18, 18, 0.5);
+}
+
+#about-me img {
+  height: 600px;
+  max-width: 400px;
+  border: 2px solid rgb(36, 36, 36);
+}
+
+#about-me p {
+  letter-spacing: 1.25px;
+}
+
+@keyframes scroll {
+  0% {
+    translate: 0;
+  }
+
+  100% {
+    translate: -100%;
+  }
+}
+
+.logo-container {
+  overflow-x: hidden;
+  background-color: #1A1A1A;
+  border: 1px solid #242424;
+  white-space: nowrap;
+}
+
+.logo-container:hover .logo-scroll {
+  animation-play-state: paused;
+}
+
+.logo-scroll {
+  animation: 40s scroll infinite linear;
+}
+
+.logo-scroll svg {
+  width: 250px;
+  height: 50px;
+  margin: 0 36px;
+}
+
+#skills h2 {
+  font-size: 48px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  row-gap: 20px;
+
+  min-width: 200px;
+  height: 350px;
+  background-color: #1A1A1A;
+  border: 1px solid #242424;
+}
+
+.skill-item:hover {
+  box-shadow: 0 0 10px #9a9a9a, 0 0 40px #9a9a9a, 0 0 80px #9a9a9a;
+  scale: 1.01;
+  transition: .5s ease-out;
+}
+
+.skill-item i {
+  font-size: 32px;
+}
+
+#contact h2 {
+  font-size: 56px;
+}
+
+footer a i:hover {
+  transition: 0.2s ease-in-out;
+  color: #E9E9E9;
+  scale: 1.3;
+}
